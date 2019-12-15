@@ -1,0 +1,27 @@
+.Sidebar {
+    flex: 0;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+
+.top {
+    height: 350px;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .Sidebar {
+        display: none;
+    }
+}
+
+.expand {
+    position: sticky;
+    display: flex;
+}

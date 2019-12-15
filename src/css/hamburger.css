@@ -1,0 +1,49 @@
+.Hamburger {
+    z-index: 5;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 8px;
+    margin: 10px;
+    outline: none;
+    transition: 0.4s;
+}
+
+.bar {
+    width: 32px;
+    border: 1px solid #000;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-40deg) translate(-6px, 6px);
+    transform: rotate(-40deg) translate(-6px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    /* -webkit-transform: rotate(50deg) translate(-8px, -8px); */
+    transform: rotate(40deg) translate(-5px, -5px);
+}
+
+.change {
+    transform: translateX(180px);
+    -webkit-transform: translateX(180px);
+    -moz-transform: translateX(180px);
+    -ms-transform: translateX(180px);
+    -o-transform: translateX(180px);
+}
+
+@media screen and (max-width: 768px) {
+    .Hamburger {
+        display: block !important;
+    }
+}

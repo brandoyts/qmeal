@@ -1,0 +1,54 @@
+html,
+body {
+    font-size: 16px;
+}
+
+.container {
+    padding: 20px;
+    width: 1460px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cta {
+    height: 30px;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta:hover {
+    background-color: rgb(75, 143, 109);
+}
+
+.active-link {
+    background-color: rgb(109, 151, 116);
+    color: #333;
+}
+
+.title {
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    html,
+    body {
+        font-size: 13px;
+    }
+}
